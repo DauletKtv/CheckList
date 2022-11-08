@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(192, 172, 199);
+  background: linear-gradient(
+    144deg,
+    rgba(192, 172, 199, 1) 0%,
+    rgba(164, 74, 121, 1) 24%,
+    rgba(93, 93, 152, 1) 52%,
+    rgba(150, 76, 189, 1) 100%
+  );
+}
+.todo {
+  display: flex;
+  align-items: center;
+}
+.todoLists {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 40px;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.myTodo {
+  height: 80%;
+  background: white;
+  padding: 0 20px;
+  width: 350px;
+  position: relative;
+  border-radius: 15px;
+}
+.line-through {
+  text-decoration: line-through;
+  color: grey;
+}
+.modalBlock {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  display: none;
+}
+.modal {
+}
+.add {
+  position: absolute;
+  bottom: -25px;
+  right: 40%;
+  border-radius: 50px;
+  width: 75px;
+  height: 75px;
+  font-size: 25px;
+  color: white;
+  background-color: orange;
+  border: none;
+}
+.add:hover {
+  cursor: pointer;
+  border: 2px black solid;
+}
+.clearTask {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: red;
+  border: none;
+  width: 60px;
+  height: 60px;
+  font-size: 34px;
+  background: none;
+}
+.clearTask:hover {
+  cursor: pointer;
+  color: rgb(179, 4, 4);
+}
+.input {
+  background-color: none;
+  border: none;
+  text-align: justify;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  width: 285px;
+}
+.input:hover {
+  cursor: pointer;
+}
+.deleteTask:hover {
+  cursor: pointer;
+}
+.editBtn:hover {
+  cursor: pointer;
+}
+.saveEdit:hover {
+  cursor: pointer;
+}
